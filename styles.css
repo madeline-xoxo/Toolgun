@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Coolvetica';
+  src: url("coolvetica.otf");
+}
+
+div {
+  animation: marquee 5s linear infinite;
+  -moz-animation: marquee 5s linear infinite;
+  font-family: 'Coolvetica';
+  color: white;
+  font-size: 100px;
+  filter: drop-shadow(5px 5px 0px black);
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-35%);
+  overflow: hidden;
+}
+
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-150%);
+  }
+
+  100% {
+    transform: translateX(200%);
+  }
+}
